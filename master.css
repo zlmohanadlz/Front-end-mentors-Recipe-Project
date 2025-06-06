@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --Stone--: hsl(30, 54%, 90%);
+    --s150--: hsl(30, 18%, 87%);
+    --Stone600--: hsl(30, 10%, 34%);
+--Stone900--: hsl(24, 5%, 18%);
+    --Brown800--: hsl(14, 45%, 36%);
+    --Rose800--: hsl(332, 51%, 32%);
+    --Rose50--: hsl(330, 100%, 98%);
+}
+
+html,
+body {
+    height: 1760px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Young Serif", "Outfit";
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--Stone--);
+}
+
+section {
+    width: 40rem;
+    height: 100rem;
+    background-color: white;
+    padding: 30px;
+    margin: 80px 0;
+    border-radius: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 15rem;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--Stone600--);
+    font-family: "Outfit";
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.Time {
+    background-color: var(--Rose50--);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.h4 {
+    font-family: "Outfit", serif;
+    color: var(--Rose800--);
+}
+
+ul li{
+    padding: 1rem 1rem 0 1rem;
+    font-family: "Outfit";
+    color: var(--Stone600--);
+}
+
+span {
+    color: var(--Stone900--);
+    font-weight: 600;
+}
+
+/* ingredients */
+
+h2 {
+    color: var(--Brown800--);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+.smaller {
+    font-size: .83rem;
+    list-style-type: decimal;
+}
+
+li::marker {
+    color: var(--Brown800--);
+    font-weight: 600;
+}
+
+.content {
+    list-style-type: none;
+    margin-left: -2rem;
+}
+
+.content li {
+    margin: 1rem 0;
+    padding: 0;
+    word-spacing: 15rem;
+}
+
+.content li span {
+    margin: 0;
+    color: var(--Brown800--);
+}
+
+.content hr {
+    margin: 0;
+}
+
+.Carbs {
+    word-spacing: 16rem !important;
+}
+
+.Protein {
+    word-spacing: 15.3rem !important;
+}
+
+.Fat {
+    word-spacing: 17rem !important;
+}
+
+@media (max-width: 433px) {
+    section {
+        width: 100%;
+        height: 118%;
+        margin: 0;
+        padding: 50px;
+    }
+    img {
+        width: 141%;
+        margin: -50px 0 0 -60px;
+    }
+    .content li {
+        word-spacing: 5rem;
+    }
+    .Carbs {
+        word-spacing: 6rem !important;
+    }
+    .Protein {
+        word-spacing: 5.3rem !important;
+    }
+    .Fat {
+        word-spacing: 7rem !important;
+    }
+}
